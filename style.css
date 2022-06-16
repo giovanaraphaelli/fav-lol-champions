@@ -25,6 +25,13 @@ html {
   background-size: cover;
 }
 
+.logo {
+  max-width: 500px;
+}
+.main-title {
+  font-size: 20px !important;
+}
+
 .hero-box {
   width: 100%;
   height: 100vh;
@@ -33,6 +40,8 @@ html {
   align-items: center;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.6);
+  gap: 20px;
+  position: relative;
 }
 
 .hero-title {
@@ -51,13 +60,19 @@ html {
   font-weight: 700;
 }
 
-.hero-box span {
-  font-family: Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 12px;
+.roll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
 }
 
+.roll > p {
+  font-size: 10px;
+}
 .arrow {
+  width: 50px;
   animation: float 3s ease-in-out infinite;
 }
 
@@ -66,7 +81,7 @@ html {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(15px);
   }
   100% {
     transform: translateY(0px);
