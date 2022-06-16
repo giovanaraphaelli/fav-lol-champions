@@ -190,3 +190,21 @@ html {
 .wrapper-icon img {
   border-radius: 50%;
 }
+
+@media (max-width: 500px) {
+  .logo {
+    max-width: 250px;
+  }
+  .hero-title {
+    font-size: 50px;
+  }
+
+  .page-container {
+    height: auto;
+  }
+
+  .wrapper-container {
+    flex-direction: column;
+    padding: 40px 25px;
+  }
+}
