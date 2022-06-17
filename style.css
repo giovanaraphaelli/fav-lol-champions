@@ -213,6 +213,7 @@ h4 {
 
 .lista-habilidades {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
 }
@@ -267,6 +268,13 @@ h4 {
 
   .wrapper-container {
     padding: 40px 25px;
+  }
+  .wrapper-about {
+    flex-direction: column;
+  }
+  .btn-habilidade {
+    width: 45px;
+    height: 45px;
   }
   .senna {
     background-image: url(images/senna-mobile.jpg);
