@@ -10,6 +10,10 @@ img {
   display: block;
 }
 
+li {
+  list-style: none;
+}
+
 html {
   background-color: #140617;
   color: #f1f0f0;
@@ -145,7 +149,8 @@ html {
 .page-container {
   max-width: 1200px;
   margin: 0 auto;
-  height: 100vh;
+  padding: 50px 0;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,9 +160,17 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 50px;
   text-align: center;
 }
+
+.wrapper-about {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
 .box-icon {
   display: flex;
   flex-direction: column;
@@ -175,9 +188,10 @@ html {
   box-shadow: 10px 10px 0px 0px #646363;
 }
 
-.box-about h4 {
+h4 {
   font-size: 22px;
-  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .wrapper-icon {
@@ -191,6 +205,55 @@ html {
   border-radius: 50%;
 }
 
+.box-habilidades {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lista-habilidades {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.descricao-habilidade {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.descricao-habilidade span {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: #646363;
+}
+
+.btn-habilidade {
+  border: none;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.btn-habilidade:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 0px 0px #646363;
+}
+
+.ativo {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 0px 0px #646363;
+  padding: 3px;
+  border: 2px solid #f1f0f0;
+}
+
+.descricao-habilidade h5 {
+  font-size: 16px;
+}
+
 @media (max-width: 500px) {
   .logo {
     max-width: 250px;
@@ -198,13 +261,30 @@ html {
   .hero-title {
     font-size: 50px;
   }
-
-  .page-container {
-    height: auto;
+  .roll {
+    bottom: 80px;
   }
 
   .wrapper-container {
-    flex-direction: column;
     padding: 40px 25px;
+  }
+  .senna {
+    background-image: url(images/senna-mobile.jpg);
+  }
+
+  .lux {
+    background-image: url(images/lux-mobile.jpg);
+  }
+
+  .soraka {
+    background-image: url(images/soraka-mobile.jpg);
+  }
+
+  .leona {
+    background-image: url(images/leona-mobile.jpg);
+  }
+
+  .morgana {
+    background-image: url(images/morgana-mobile.jpg);
   }
 }
