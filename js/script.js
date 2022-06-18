@@ -22,7 +22,7 @@ sennaDescricao(
   ".senna-w",
   "ABRAÇO FINAL",
   "W",
-  "Conhecimento em  manipulação de DOM, tipo de dados, objetos, métodos, funções e eventos.",
+  "Senna dispara uma onda de Névoa Negra. Se atingir um inimigo, ela o aprisiona ferozmente, enraizando o alvo e tudo que estiver ao redor dele após um curto intervalo.",
   "images/habilidades-senna/senna-w-gif.gif"
 );
 
