@@ -18,6 +18,7 @@ html {
   background-color: #140617;
   color: #f1f0f0;
   font-family: "Merriweather", serif;
+  font-size: 14px;
   scroll-behavior: smooth;
 }
 
@@ -32,8 +33,11 @@ html {
 .logo {
   max-width: 500px;
 }
-.main-title {
-  font-size: 20px !important;
+#main-title {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .hero-box {
@@ -43,7 +47,7 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(23, 6, 26, 0.6);
   gap: 20px;
   position: relative;
 }
@@ -96,7 +100,7 @@ html {
 }
 
 .fav {
-  background-image: url(images/fav.jpg);
+  background-image: url(images/senna-wall.webp);
 }
 
 .senna {
@@ -147,16 +151,12 @@ html {
   transform: scale(0.9);
 }
 .page-container {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 50px 0;
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .wrapper-container {
-  max-width: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,9 +185,7 @@ html {
 
 .box-about {
   font-weight: 300;
-  border: 2px solid #f1f0f0;
   padding: 20px;
-  box-shadow: 10px 10px 0px 0px #646363;
 }
 
 h2 {
@@ -220,32 +218,31 @@ h4 {
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  border-top: 1px solid #646363;
-  border-bottom: 1px solid #646363;
+  border-top: 1px solid #f1f0f0;
 }
 
 .lista-habilidades {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+  gap: 15px;
+  justify-content: space-around;
 }
 .descricao-habilidade {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  gap: 50px;
   text-align: left;
 }
 
 .descricao-habilidade span {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   color: #646363;
+  margin-top: 30px;
 }
 
-.descricao-habilidade p {
-  min-height: 150px;
+.descricao-habilidade h5 {
+  font-size: 16px;
 }
 
 .btn-habilidade {
@@ -257,21 +254,34 @@ h4 {
 }
 
 .btn-habilidade:hover {
-  transform: scale(1.2);
-  box-shadow: 5px 5px 0px 0px #646363;
+  transform: scale(1.3);
+  border: 2px solid #f1f0f0;
+  padding: 3px;
 }
 
 .ativo {
-  transform: scale(1.2);
+  transform: scale(1.3);
   box-shadow: 5px 5px 0px 0px #646363;
   padding: 3px;
   border: 2px solid #f1f0f0;
 }
 
-.descricao-habilidade h5 {
-  font-size: 16px;
+.wrapper-habilidade {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
 }
 
+.gif-habilidade {
+  width: 400px;
+  height: 265px;
+  object-fit: cover;
+  object-position: center;
+  padding: 10px;
+  box-shadow: 10px 10px 0px 0px #646363;
+  border: 2px solid #f1f0f0;
+}
 footer {
   width: 100%;
   text-align: center;
@@ -300,6 +310,13 @@ footer {
   .btn-habilidade {
     width: 45px;
     height: 45px;
+  }
+  .descricao-habilidade {
+    flex-direction: column-reverse;
+  }
+  .gif-habilidade {
+    width: 330px;
+    height: 210px;
   }
   .senna {
     background-image: url(images/senna-mobile.jpg);
