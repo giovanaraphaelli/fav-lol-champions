@@ -3,7 +3,9 @@ import { luxDescricao } from "./lux-descricao.js";
 import { sorakaDescricao } from "./soraka-descricao.js";
 import { leonaDescricao } from "./leona-descricao.js";
 import { morganaDescricao } from "./morgana-descricao.js";
+import { initScrollReveal } from "./scroll-reveal.js";
 
+initScrollReveal();
 sennaDescricao(
   ".senna-passiva",
   "ABSOLVIÇÃO",

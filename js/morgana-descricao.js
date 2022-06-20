@@ -5,6 +5,7 @@ export function morganaDescricao(nameCard, title, habilidade, text, gif) {
     ".morgana-title-habilidade"
   );
   var gifMorganaHabilidade = document.querySelector(".gif-morgana-habilidade");
+  const btnMorgana = document.querySelectorAll(".btn-habilidade.morgana");
 
   if (morganaDescricao) {
     document.querySelector(nameCard).addEventListener("click", () => {
@@ -14,4 +15,14 @@ export function morganaDescricao(nameCard, title, habilidade, text, gif) {
       gifMorganaHabilidade.setAttribute("src", gif);
     });
   }
+  function activeBtn(event) {
+    btnMorgana.forEach((btn) => {
+      btn.classList.remove("ativo");
+    });
+    event.currentTarget.classList.add("ativo");
+  }
+
+  btnMorgana.forEach((item) => {
+    item.addEventListener("click", activeBtn);
+  });
 }

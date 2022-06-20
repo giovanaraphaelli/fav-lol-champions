@@ -5,6 +5,7 @@ export function sorakaDescricao(nameCard, title, habilidade, text, gif) {
     ".soraka-title-habilidade"
   );
   var gifSorakaHabilidade = document.querySelector(".gif-soraka-habilidade");
+  const btnSoraka = document.querySelectorAll(".btn-habilidade.soraka");
 
   if (sorakaDescricao) {
     document.querySelector(nameCard).addEventListener("click", () => {
@@ -14,4 +15,14 @@ export function sorakaDescricao(nameCard, title, habilidade, text, gif) {
       gifSorakaHabilidade.setAttribute("src", gif);
     });
   }
+  function activeBtn(event) {
+    btnSoraka.forEach((btn) => {
+      btn.classList.remove("ativo");
+    });
+    event.currentTarget.classList.add("ativo");
+  }
+
+  btnSoraka.forEach((item) => {
+    item.addEventListener("click", activeBtn);
+  });
 }
