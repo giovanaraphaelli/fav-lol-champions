@@ -1,9 +1,9 @@
 export function initScrollReveal() {
   const sr = ScrollReveal({
-    delay: 300,
+    delay: 500,
     distance: "100px",
-    duration: 1500,
-    reset: false,
+    duration: 3000,
+    reset: true,
   });
   sr.reveal(".toLeft", { origin: "left" });
   sr.reveal(".toRight", { origin: "right" });
